@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -17,11 +18,29 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _textField1.delegate = self;
+    _textField2.delegate = self;
+    _textField3.delegate = self;
+    _textField4.delegate = self;
+    _textField5.delegate = self;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
+    return true;
+}
+
+- (IBAction)ButtonClicked:(id)sender {
+    [self pushSecondViewController];
+}
+
+- (void) pushSecondViewController{
+    NSLog(@"ViewController.pushViewController()");
+    SecondViewController *vc = [[SecondViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
+    //    SecondViewController *vc = [[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    //    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end

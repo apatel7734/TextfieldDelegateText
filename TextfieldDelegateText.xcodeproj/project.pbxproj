@@ -14,6 +14,12 @@
 		094877D31B76E6EC005E0D24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 094877D21B76E6EC005E0D24 /* Images.xcassets */; };
 		094877D61B76E6EC005E0D24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094877D41B76E6EC005E0D24 /* LaunchScreen.xib */; };
 		094877E21B76E6EC005E0D24 /* TextfieldDelegateTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 094877E11B76E6EC005E0D24 /* TextfieldDelegateTextTests.m */; };
+		094877EE1B76E8CA005E0D24 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 094877EC1B76E8CA005E0D24 /* SecondViewController.m */; };
+		094877EF1B76E8CA005E0D24 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094877ED1B76E8CA005E0D24 /* SecondViewController.xib */; };
+		094877F21B76E933005E0D24 /* customTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 094877F11B76E933005E0D24 /* customTextField.m */; };
+		094877F61B76E976005E0D24 /* customTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094877F51B76E976005E0D24 /* customTextField.xib */; };
+		094877FA1B76E9D1005E0D24 /* CustomUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 094877F91B76E9D1005E0D24 /* CustomUIView.m */; };
+		094877FC1B76E9DD005E0D24 /* CustomUIView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 094877FB1B76E9DD005E0D24 /* CustomUIView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,15 @@
 		094877DB1B76E6EC005E0D24 /* TextfieldDelegateTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextfieldDelegateTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		094877E01B76E6EC005E0D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		094877E11B76E6EC005E0D24 /* TextfieldDelegateTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextfieldDelegateTextTests.m; sourceTree = "<group>"; };
+		094877EB1B76E8CA005E0D24 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		094877EC1B76E8CA005E0D24 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		094877ED1B76E8CA005E0D24 /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		094877F01B76E933005E0D24 /* customTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = customTextField.h; sourceTree = "<group>"; };
+		094877F11B76E933005E0D24 /* customTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = customTextField.m; sourceTree = "<group>"; };
+		094877F51B76E976005E0D24 /* customTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = customTextField.xib; sourceTree = "<group>"; };
+		094877F81B76E9D1005E0D24 /* CustomUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomUIView.h; sourceTree = "<group>"; };
+		094877F91B76E9D1005E0D24 /* CustomUIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomUIView.m; sourceTree = "<group>"; };
+		094877FB1B76E9DD005E0D24 /* CustomUIView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomUIView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,8 @@
 		094877C41B76E6EB005E0D24 /* TextfieldDelegateText */ = {
 			isa = PBXGroup;
 			children = (
+				094877F71B76E9BD005E0D24 /* CustomUIView */,
+				094877F41B76E956005E0D24 /* CustomTextField */,
 				094877C91B76E6EB005E0D24 /* AppDelegate.h */,
 				094877CA1B76E6EB005E0D24 /* AppDelegate.m */,
 				094877CC1B76E6EC005E0D24 /* ViewController.h */,
@@ -89,6 +106,7 @@
 				094877D21B76E6EC005E0D24 /* Images.xcassets */,
 				094877D41B76E6EC005E0D24 /* LaunchScreen.xib */,
 				094877C51B76E6EB005E0D24 /* Supporting Files */,
+				094877F31B76E93D005E0D24 /* SecondViewController */,
 			);
 			path = TextfieldDelegateText;
 			sourceTree = "<group>";
@@ -117,6 +135,36 @@
 				094877E01B76E6EC005E0D24 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		094877F31B76E93D005E0D24 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				094877EB1B76E8CA005E0D24 /* SecondViewController.h */,
+				094877EC1B76E8CA005E0D24 /* SecondViewController.m */,
+				094877ED1B76E8CA005E0D24 /* SecondViewController.xib */,
+			);
+			name = SecondViewController;
+			sourceTree = "<group>";
+		};
+		094877F41B76E956005E0D24 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				094877F01B76E933005E0D24 /* customTextField.h */,
+				094877F11B76E933005E0D24 /* customTextField.m */,
+				094877F51B76E976005E0D24 /* customTextField.xib */,
+			);
+			name = CustomTextField;
+			sourceTree = "<group>";
+		};
+		094877F71B76E9BD005E0D24 /* CustomUIView */ = {
+			isa = PBXGroup;
+			children = (
+				094877F81B76E9D1005E0D24 /* CustomUIView.h */,
+				094877F91B76E9D1005E0D24 /* CustomUIView.m */,
+				094877FB1B76E9DD005E0D24 /* CustomUIView.xib */,
+			);
+			name = CustomUIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,9 +247,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094877F61B76E976005E0D24 /* customTextField.xib in Resources */,
+				094877EF1B76E8CA005E0D24 /* SecondViewController.xib in Resources */,
 				094877D11B76E6EC005E0D24 /* Main.storyboard in Resources */,
 				094877D61B76E6EC005E0D24 /* LaunchScreen.xib in Resources */,
 				094877D31B76E6EC005E0D24 /* Images.xcassets in Resources */,
+				094877FC1B76E9DD005E0D24 /* CustomUIView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094877EE1B76E8CA005E0D24 /* SecondViewController.m in Sources */,
 				094877CE1B76E6EC005E0D24 /* ViewController.m in Sources */,
 				094877CB1B76E6EB005E0D24 /* AppDelegate.m in Sources */,
+				094877FA1B76E9D1005E0D24 /* CustomUIView.m in Sources */,
+				094877F21B76E933005E0D24 /* customTextField.m in Sources */,
 				094877C81B76E6EB005E0D24 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
