@@ -27,6 +27,10 @@
     //Test commit 4
     //Test commit 10
     //Test commit 11
+    //Test commit 5
+    //Test commit 6
+    //Test commit 7
+    //Test commit 8
 }
 
 -(BOOL) textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
